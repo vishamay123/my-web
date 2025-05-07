@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Portfolio</title>
+  <style>
+    :root {
+      --primary: #6C63FF;
+      --bg: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 1rem 0 0.3rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #e0e0e0;
+    }
+
+    nav {
+      text-align: center;
+      margin: 1rem 0 2rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #fff;
+      transition: 0.3s;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #fff;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .social {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .social a {
+      color: #fff;
+      margin: 0 15px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      color: #ffda77;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #ccc;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <img src="IMG_20250119_103048_696.webp" alt="Profile" />
+      <h1>Your Name</h1>
+      <p>Cloud | DevOps | AWS | Passionate Builder</p>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>I am a B.Tech Computer Engineering student with 1.5 years of experience in AWS and DevOps. I love building scalable, secure infrastructure and automating workflows with tools like Docker, Jenkins, and Kubernetes.</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>☁️ Amazon Web Services (EC2, S3, VPC, IAM, Lambda, Route 53)</li>
+        <li>🐳 Docker & Kubernetes</li>
+        <li>🛠 CI/CD with Jenkins & GitHub Actions</li>
+        <li>🖥 Linux, Bash Scripting, Nginx</li>
+        <li>💻 HTML, CSS, JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Cloud Resume Challenge</strong> – Serverless resume using S3, CloudFront, DynamoDB, and Lambda</li>
+        <li><strong>AWS Receipt Processor</strong> – OCR-based automation pipeline using Lambda, Textract, and SNS</li>
+        <li><strong>DevOps Pipeline</strong> – Automated app deployment using Jenkins, Git, and EC2</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:you@example.com" style="color: #ffda77;">you@example.com</a></p>
+    </section>
+
+    <div class="social">
+      <a href="#">🌐 Website</a>
+      <a href="#">💼 LinkedIn</a>
+      <a href="#">🐙 GitHub</a>
+    </div>
+
+    <footer>
+      &copy; 2025 Your Name. All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>
